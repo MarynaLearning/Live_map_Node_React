@@ -1,0 +1,37 @@
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.success {
+  border-color: var(--color-success);
+}
+
+.warning {
+  border-color: var(--color-warning);
+}
+
+.danger {
+  border-color: var(--color-danger);
+}
+
+.info {
+  border-color: var(--color-info);
+}
+
+.neutral {
+  border-color: var(--color-neutral);
+}
+
+.muted {
+  border-color: var(--color-muted);
+}
+
+.label {
+  font-size: 13px;
+}

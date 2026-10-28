@@ -1,0 +1,25 @@
+{
+  "name": "iot-live-map",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "shared",
+    "server",
+    "client"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "concurrently --names server,client --prefix-colors blue,green \"npm run dev --workspace @iot/server\" \"npm run dev --workspace @iot/client\"",
+    "build": "npm run build --workspace @iot/client",
+    "test": "vitest run",
+    "typecheck": "tsc -p shared && tsc -p server && tsc -p client && tsc -p client/tsconfig.node.json"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "concurrently": "^10.0.6",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}

@@ -1,0 +1,55 @@
+.statusDot {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.success {
+  background: var(--color-success);
+  color: var(--color-success);
+}
+
+.warning {
+  background: var(--color-warning);
+  color: var(--color-warning);
+}
+
+.danger {
+  background: var(--color-danger);
+  color: var(--color-danger);
+}
+
+.info {
+  background: var(--color-info);
+  color: var(--color-info);
+}
+
+.neutral {
+  background: var(--color-neutral);
+  color: var(--color-neutral);
+}
+
+.muted {
+  background: var(--color-muted);
+  color: var(--color-muted);
+}
+
+/* currentcolor = the tone colour set above, so the ring matches the dot. */
+.pulsing {
+  animation: pulse 1.6s ease-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 currentcolor;
+  }
+
+  70% {
+    box-shadow: 0 0 0 8px transparent;
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}

@@ -1,0 +1,51 @@
+.headline {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+/* Centres the shared StatusDot vertically and makes it bigger for the headline. */
+.statusDotSlot {
+  display: flex;
+  align-self: center;
+  transform: scale(1.5);
+}
+
+.value {
+  font-family: var(--font-mono);
+  font-size: 30px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.unit {
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+.statusLabel {
+  margin-left: auto;
+  color: var(--color-text-muted);
+}
+
+.meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+}
+
+.metaItem {
+  display: flex;
+  gap: 6px;
+}
+
+.metaLabel {
+  color: var(--color-text-muted);
+  font-size: 12px;
+}
+
+.metaValue {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 12px;
+}

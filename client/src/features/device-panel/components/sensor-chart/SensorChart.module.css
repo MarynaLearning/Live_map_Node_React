@@ -1,0 +1,8 @@
+.chartBox {
+  position: relative;
+  height: 170px;
+}
+
+.chartCanvas {
+  display: block;
+}

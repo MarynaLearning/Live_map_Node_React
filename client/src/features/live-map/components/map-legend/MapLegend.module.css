@@ -1,0 +1,30 @@
+.mapLegend {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 0;
+  padding: 7px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: rgb(22 27 34 / 92%);
+  list-style: none;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.label {
+  color: var(--color-text);
+}
+
+.hint {
+  color: var(--color-text-muted);
+}
